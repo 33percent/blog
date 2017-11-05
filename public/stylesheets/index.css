@@ -1,0 +1,29 @@
+.ifont{
+	font: 24px "Lucida Grande", Helvetica, cursive, serif;
+}
+.head{
+	font-size: 60px;
+}
+.ibody{
+	width: 600px;
+	margin:50px;
+	text-align: inherit;
+}
+.ipadd{
+	margin: auto;
+padding-left: 300px;
+}
+.dir{
+	padding-right: 500px;
+}
+/* .ipadd.ifont{
+	padding:20px
+}
+.ifont.ibody{}
+.ifont.ibody.dir{} */
+
+.inputbox{
+	border: 2px solid #85b4d6;
+	border-radius: 4px;
+	background-color: #e3e9f7;
+}
