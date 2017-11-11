@@ -1,8 +1,6 @@
 let exist = '';
 console.log('exits gere' + exist)
 function emailsubs() {
-
-    if (exist === "") {
         let emailid = $("#emailid").val();
         let name = emailid.split('@');
         let obj = {
@@ -17,16 +15,14 @@ function emailsubs() {
             data: obj,
             success: function (data) {
                 console.log(data);
-                exist = $("#emailid").val();
                 if (data.response === 1) {
-                    alert('Thanks ' + name[0] + ' for subscribing');
-                } else {
-                    alert('error while subscribing');
+                    swal("Great " + name[0], "Thanks for subscribing", "success");
+                    exist = name[0];
+                } else if(data.response === 2){
+                    swal("Thumbs up " + name[0], "It shows how interested you are, but you're already subscribed", "success");
+                    exist = name[0];
                 }
             }
         });
-    } else {
-        alert('already subscribed');
-    }
 
 }

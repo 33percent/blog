@@ -27,3 +27,15 @@ padding-left: 300px;
 	border-radius: 4px;
 	background-color: #e3e9f7;
 }
+.laske{
+	font-family:Zapf Chancery, cursive;
+	font-size:initial;
+	/* font-family: Oldtown, fantasy; */
+	font-style: oblique;
+}
+p{
+	font-size: 17px;
+}
+blockquote{
+	font-size: 18px;
+}
