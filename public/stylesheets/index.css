@@ -55,6 +55,8 @@ blockquote{
     /* For mobile phones: */
 	.para{
 		font-size:15px;
+		text-align: center;
+		text-justify: left;
 	}
 	.bigger{
 		font-size: 40px;
@@ -62,4 +64,16 @@ blockquote{
 		
 	}
 	
+}
+@media only screen and (max-width: 600px) {
+	.para{
+		font-size:15px;
+		text-align: left;
+		/* text-justify: left; */
+	}
+	.bigger{
+		font-size: 40px;
+		text-align: left;
+		
+	}
 }
