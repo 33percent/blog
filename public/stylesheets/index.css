@@ -28,14 +28,32 @@ padding-left: 300px;
 	background-color: #e3e9f7;
 }
 .laske{
-	font-family:Zapf Chancery, cursive;
-	font-size:initial;
-	/* font-family: Oldtown, fantasy; */
-	font-style: oblique;
+	/* font-family:Zapf Chancery, cursive; */
+	font-size:20px;
+	font-family: Oldtown, fantasy;
+	/* font-style: oblique; */
 }
-p{
-	font-size: 17px;
+.para{
+	font-size: 20px;
+	/* background-image: url("../images/home.jpg"); */
+
 }
 blockquote{
+	background-color: #e6e0c6;
 	font-size: 18px;
+}
+.bigger{
+	font-size: 80px;
+	font-family:Zapf Chancery, cursive;
+	font-style: oblique;
+}
+.jumbotron{
+	background-color: transparent;
+}
+
+@media only screen and (max-width: 400px) {
+    /* For mobile phones: */
+	.para{
+		font-size:15px;
+	}
 }
