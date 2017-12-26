@@ -2,8 +2,15 @@ var express = require('express');
 var router = express.Router();
 var subscription = require('../models/subscription');
 router.get('/', function (req, res) {
-  res.render('index', { title: 'Express' });
+  res.render('index1', { title: 'Express' });
 });
+
+router.get('/short/:id',function(req,res,next){
+  var indexer = 'short'+req.params.id;
+res.render(indexer);
+  });
+
+
 
 router.post('/emailsub', function (req, res, next) {
   // "use strict";

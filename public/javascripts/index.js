@@ -1,5 +1,4 @@
 let exist = '';
-console.log('exits gere' + exist)
 function emailsubs() {
         let emailid = $("#emailid").val();
         let name = emailid.split('@');
@@ -14,7 +13,6 @@ function emailsubs() {
             method: "post",
             data: obj,
             success: function (data) {
-                console.log(data);
                 if (data.response === 1) {
                     swal("Great " + name[0], "Thanks for subscribing", "success");
                     exist = name[0];

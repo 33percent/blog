@@ -6,6 +6,8 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var routes = require('./routes/index');
+var register = require('./routes/register.js');
+var short = require('./routes/short.js')
 var users = require('./routes/users');
 var admin = require('./routes/admin');
 mongoose.createConnection('mongodb://localhost/blog');
@@ -31,6 +33,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
 app.use('/users', users);
 app.use('/admin',admin);
+app.use('/register',register);
+app.use('/short',short)
 /// catch 404 and forwarding to error handler
 app.use(function(req, res, next) {
     var err = new Error('Not Found');
